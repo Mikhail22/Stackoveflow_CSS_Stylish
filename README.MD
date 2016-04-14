@@ -4,6 +4,7 @@ OS: 		Windows
 Browser: 	Firefox  
 Created: 	2016 by Mikhail V.   
 
+
 **Description**   
 
 This is a highly readably user style for Stylish plugin.  
@@ -15,6 +16,7 @@ Currently Applied to sites:
  superuser.com  
  meta.superuser.com  
  codegolf.stackexchange.com   
+
 
 **Usage**  
 
