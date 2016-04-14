@@ -11,7 +11,10 @@ Currently Applied to sites:
 	"http://codegolf.stackexchange.com"
 
 Created: 2016
+
 OS: Windows
+
 Browser: Firefox
+
 Author: Mikhail V.
 
