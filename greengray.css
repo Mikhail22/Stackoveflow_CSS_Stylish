@@ -1,0 +1,352 @@
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  
+ * This style is tested with Firefox on Windows 7
+ * Required fonts: "Segoe UI", "Perpetua", "Georgia", "Courier New"
+ * (C) 2016  Mikhail V. 
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+@-moz-document url-prefix("http://stackoverflow.com"), 
+	url-prefix("http://meta.stackoverflow.com"),
+	url-prefix("http://ux.stackexchange.com"), 
+	url-prefix("http://meta.ux.stackexchange.com"), 
+	url-prefix("http://superuser.com"), 
+	url-prefix("http://meta.superuser.com"), 
+	url-prefix("http://codegolf.stackexchange.com"){
+
+
+/* ======================  LAYOUT SETTINGS  ====================== */
+/*  Default global font  */
+	#content{
+		font-family: 	"Segoe UI" !important;
+	}
+/*  top bar and header  */
+	.topbar .topbar-wrapper{
+		margin-left: 	134px  !important;
+		width: 			1000px  !important;
+	}
+	div#header {
+		margin-top: 	0px  !important;
+		margin-bottom: 	0px  !important;
+		margin-left: 	120px  !important;
+		width: 			1000px  !important;
+	}
+	div#mainbar{
+		width: 			760px !important;
+	}
+
+/*  Main container  */
+	div#content {
+		margin-left: 	130px  !important;
+		padding-left: 	30px  !important;
+		border: 		1px solid !important;
+		border-color: 	#999 !important;
+		background-color: #F0F3E9 !important;
+		width: 			1080px !important;
+	}
+/* Body paragraph bg */
+	body {
+		background-color: #E6E6DC; !important;
+	}
+/* Body width  */
+	.post-text {
+		font-family: 	"Perpetua" !important;
+		width: 			610px !important; 
+	}
+/* paragraph text */
+	.post-text p{
+		color: 			#000000 !important;
+		font-size: 		18px !important;
+		line-height: 	24px !important;
+		margin-top:		7px !important;
+		margin-bottom:	10px !important;
+	}
+/* Bulleted lists */
+	.post-text li {
+		font-size: 		17px !important;
+		line-height: 	21px !important;
+		margin-top:		8px !important;
+		margin-bottom:	8px !important;
+	}
+	.post-text ul {
+		margin-top:		0px !important;
+		margin-bottom:	12px !important;
+	}
+/*  Vote column size on the Q/A page */
+	.votecell {
+		padding-left: 	35px !important;
+		padding-right: 	45px !important;
+	}
+/* Images width  */
+	.post-text img, .wmd-preview img{
+		max-width: 		560px !important; }
+/* Comments block settings */
+	.comments {
+		width: 			610px !important;
+		border-top:		1px solid #57584C !important; 
+	}
+/* Comment cell */
+	div.comment-body {
+		font-family : 	"Perpetua" !important;
+		font-size : 	15px !important;
+		line-height: 	19px !important;
+	}
+/* Comments separator. */
+	tr.comment>td {
+		border-bottom: 	1px solid #D3D4C8 !important; 
+	}
+/* Remove tabs borders */
+	#tabs a{
+		border-bottom-width: 0px !important;
+		border-left-width: 0px !important;
+		border-right-width: 0px !important;
+	}
+/* Answer header */
+	#answers-header {
+		width: 			738px !important; 
+	} 
+	.subheader {
+		border-bottom: 	3px solid #968780 !important; 
+	} 
+/* Answer cell size and separator */
+	#answers .answer{
+		border-bottom: 	3px solid #61625B !important; 
+		width: 			738px !important;
+	} 
+/* Question header */
+	#question-header {
+		border-color: 	#D2D4C8 !important;
+		border-width: 	4px !important;
+		padding-top: 	2px !important;
+		padding-bottom: 3px !important;
+	}
+	#question-header a{
+		font-family:	"Georgia" !important;
+		font-size: 		23px !important;
+		color: 			#181A0D !important; 
+	}
+/* Text headers */
+	h1,h2,h3 {
+		font-family: 	"Georgia" !important;
+	}
+	h1 {
+		font-size: 		21px !important;
+		margin-top: 	14px !important;
+		margin-bottom: 	4px !important;
+	}
+/* Fix the margin in page header [Answer, Tags...] */
+	.subheader h1{
+		margin-top:		2px !important;
+	} 
+/* Info caption (e.g. Tag info) */
+	div.welovestackoverflow {
+		padding-top: 	10px !important;
+		border:			2px solid #C2C1B5 !important; 
+	}
+/* Question status caption (marked/protected) */
+	div.question-status{
+		background: 	#E0D5E6 !important;
+	}
+/* Owner highlight color */
+	.owner{
+		background-color: #EADDD5 !important;
+	}
+/* HR line style */
+	hr {
+		border-top: 	1px solid #C2C1B5; !important;
+	}
+/* Quote layout */
+	blockquote {
+		padding: 		5px !important;
+		padding-left: 	15px !important;
+		border-left:	2px solid #A4A48A !important; 
+		background: 	transparent !important
+	}
+
+/* ===================  Questions list / search page ===================  */
+	div.statscontainer {
+		margin-left:	20px !important;
+	}
+	div.summary {
+		width: 			620px !important;
+	}
+	.result-link {
+		font-family : 	"Georgia" !important;
+		margin-bottom: 	8x !important;
+	}
+	.result-link a{
+		color: 			#000000 !important;
+		font-size: 		18px !important;
+	}
+	.result-link a:hover{
+		color: 			#747165 !important;
+	}
+	.result-link a:visited {
+		color: 			#747165 !important;
+	}
+	div.question-summary {
+		width: 			760px !important;
+		border-bottom:	1px solid #C0C0AD !important; 
+	}
+
+/* Fix summary container  */
+	.search-results .question-summary .summary{
+		float:			none !important;
+		margin:			0 0 0 126px !important;
+	} 
+	.question-summary .summary{
+		float:			none !important;
+		margin:			0 0 0 126px !important;
+		padding:		0px  !important;
+	}
+/* Question excerpt */
+	div.excerpt{
+		font-family: 	"Perpetua" !important;
+		font-size: 		16px !important;
+		color: 			#2A2520 !important;
+	}
+
+/* =================== Sidebar width ==========================  */
+	div#sidebar {
+		width: 			240px  !important;
+	}
+/* =================== Questions hyperlinks ===================  */
+/* Question header in Q list*/
+	h3 a.question-hyperlink{
+		font-family: 	"Georgia" !important;
+		font-size: 		19px !important;
+	}
+/* Question links in sidebar*/
+	.question-hyperlink {
+		//font-family: 	"Segoe UI" !important;
+		font-size: 		12px !important;
+		line-height: 	17px !important;
+		color: 			#000000 !important;
+	}
+	.question-hyperlink:hover {
+		color: 			#747165 !important;
+	}
+	.question-hyperlink:visited {
+		color: 			#747165 !important;
+	}
+/*  Featured ad  */
+	.bulletin-title{
+		color: 			#484235 !important;
+	}
+	.module.community-bulletin {
+		border: 		1px solid #AEAD9D !important;
+		background: 	none !important;
+		padding-left: 	9px !important;
+		padding-top: 	9px !important;
+		padding-right: 	5px !important;
+		padding-bottom: 5px !important;
+	}
+
+/* =================== Votes coloring ===================  */
+	.answer-votes{
+		background:		none  !important;
+		color:			#000000 !important;
+	}
+	.viewcount {
+		color:			#000000 !important;
+	}
+	.answered{
+		background:		#DDDDD3  !important;
+		color:			#000000 !important;
+	}
+	.answered strong{
+		color:			#000000 !important;
+	}
+	.answered .mini-counts{
+		color:			#000000 !important;
+	}
+	.answered-accepted .mini-counts{
+		color:			#000000 !important;
+	}
+	.answered-accepted{
+		background:		#DDDDD3  !important;
+		border: 		1px solid #8E8E7C !important;
+		color:			#000000 !important;
+	}
+
+/* ======================= Code block ====================== */
+/* Code block frame look */
+	pre {
+		background-color : #E6E6DD !important;
+		padding-left : 	8px !important; 
+	}
+	code {
+		background: 	transparent !important;
+		color: 			#A52101 !important;
+		font-family: 	inherit !important;
+		font-size: 		inherit !important;
+	}
+/* Code block font */
+	pre code {
+		background: 	transparent !important;
+		color: 			#100E05 !important;
+		font-family: 	"Courier New" !important;
+		font-weight: 	bold !important;
+		font-size: 		12px !important;
+		line-height: 	21px !important;
+	}
+/* Inline Code in paragraph and links */
+	p code {
+		background-color : transparent !important;
+	}
+	a code {
+		color: 			inherit !important;
+	}
+/* Code highlight scheme */
+	pre .str{color:#005E88!important}
+	pre .kwd{color:#8A1818!important}
+	pre .com{color:#A8A594!important}
+	pre .typ{color:#3E5234!important}
+	pre .lit{color:#5E5210!important}
+	pre .pun{color:#100E05!important}
+	pre .pln{color:#100E05!important}
+	pre .tag{color:#711C84!important}
+	pre .atn{color:#376827!important} 
+	pre .atv{color:#005E88!important} 
+	pre .dec{color:#53741C!important}
+
+
+/* ========================= Tags ========================= */
+	.post-tag {
+		font-family: 	"Courier New"  !important;
+		font-weight: 	bold !important;
+		font-size: 		12px !important;
+		color: 			#111 !important;
+		border-color: 	#C0C0AD !important;
+		background: 	#E6E6DC !important;
+	}
+	.post-tag:hover{
+		background: 	#D6D6C7 !important;
+	}
+	.moderator-tag {
+		color: 			#A60000 !important;
+		border-color: 	#A60000 !important;
+	}
+	.required-tag {
+		text-decoration: 	underline  !important;
+	}
+/* Fix paddings for inline tags */
+	a.post-tag {
+		padding-top: 	5px !important;
+		padding-bottom: 4px !important;
+		padding-left: 	7px !important;
+		padding-right: 	7px !important;
+	}
+	p .post-tag {
+		padding-top: 	3px !important;
+		padding-bottom: 2px !important;
+		padding-left: 	4px !important;
+		padding-right: 	4px !important;
+	}
+	li .post-tag {
+		padding-top: 	3px !important;
+		padding-bottom: 2px !important;
+		padding-left: 	4px !important;
+		padding-right: 	4px !important;
+	}
+
+
