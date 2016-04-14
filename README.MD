@@ -1,17 +1,18 @@
-###User style  for StackOverflow 
+###User style  for StackOverflow  
+OS: 		Windows  
+Browser: 	Firefox  
+Created: 	2016 by Mikhail V.   
 
-This is a user style for Stylish plugin.  
-Currently Applied to sites:  
-	"http://stackoverflow.com"  
-	"http://meta.stackoverflow.com"  
-	"http://ux.stackexchange.com"  
-	"http://meta.ux.stackexchange.com"  
-	"http://superuser.com"  
-	"http://meta.superuser.com"  
-	"http://codegolf.stackexchange.com"   
+This is a highly readably user style for Stylish plugin.  
+Currently Applied to sites:   
+ stackoverflow.com  
+ meta.stackoverflow.com  
+ ux.stackexchange.com  
+ meta.ux.stackexchange.com  
+ superuser.com  
+ meta.superuser.com  
+ codegolf.stackexchange.com   
 
-Created: 2016  
-OS: Windows  
-Browser: Firefox  
-Author: Mikhail V.   
+*Requirements*  
+For this style to work properly, you must have "Perpetua", "Segoe UI", "Georgia" fonts installed.
 
