@@ -7,8 +7,8 @@ Created: 	2016 by Mikhail V.
   
 **Description**   
 
-This is a highly readably user style for Stylish plugin.  
-Currently Applied to sites:   
+This is a highly readable user style for Stylish Firefox plugin.  
+Currently tested and applied to sites:   
  stackoverflow.com  
  meta.stackoverflow.com  
  ux.stackexchange.com  
