@@ -20,6 +20,6 @@ Currently Applied to sites:
   
 **Usage**  
 
-For this style to work properly, you must have "Perpetua", "Segoe UI", "Georgia" fonts installed.  
+For this style to work properly, you must have "Perpetua", "Segoe UI", "Georgia" and "Courier New" fonts installed.  
 Install Stylish plugin for Firefox, click on the plugin icon, select "manage styles", click "Write New Style" and copy paste the file "greengray.css" into the edit window and save it.
 
