@@ -1,9 +1,11 @@
 ###User style "GreenGray" for StackOverflow  
 Created: 	2016 by Mikhail V.   
+
 ---
 Files: 		greengray.css  
 OS: 		Windows  
 Browser: 	Firefox  
+ 
 ---
   
   
