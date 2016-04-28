@@ -7,14 +7,23 @@
 
 @-moz-document url-prefix("http://stackoverflow.com"), 
 	url-prefix("http://meta.stackoverflow.com"),
+	url-prefix("http://meta.stackexchange.com"),
 	url-prefix("http://ux.stackexchange.com"), 
 	url-prefix("http://meta.ux.stackexchange.com"), 
 	url-prefix("http://superuser.com"), 
 	url-prefix("http://meta.superuser.com"), 
+	url-prefix("http://codereview.stackexchange.com"), 
+	url-prefix("http://meta.codereview.stackexchange.com"), 
+	url-prefix("http://physics.stackexchange.com"), 
+	url-prefix("http://meta.physics.stackexchange.com"), 
 	url-prefix("http://codegolf.stackexchange.com"){
 
 
 /* ======================  LAYOUT SETTINGS  ====================== */
+/* HTML Body bg */
+	body {
+		background-color: #E6E6DC; !important;
+	}
 /*  Default global font  */
 	#content{
 		font-family: 	"Segoe UI" !important;
@@ -40,12 +49,10 @@
 		padding-left: 	30px  !important;
 		border: 		1px solid !important;
 		border-color: 	#999 !important;
-		background-color: #F0F3E9 !important;
+		//background-color: #F0F3E9 !important;
+		//background-color: #F1F4ED !important;
+		background-color: #EEF1E8 !important;
 		width: 			1080px !important;
-	}
-/* Body paragraph bg */
-	body {
-		background-color: #E6E6DC; !important;
 	}
 /* Body width  */
 	.post-text {
@@ -55,6 +62,7 @@
 /* paragraph text */
 	.post-text p{
 		color: 			#000000 !important;
+		//font-size: 		18px !important;
 		font-size: 		18px !important;
 		line-height: 	24px !important;
 		margin-top:		7px !important;
@@ -163,6 +171,16 @@
 	}
 
 /* ===================  Questions list / search page ===================  */
+	.tagged-interesting{
+		//background-color: #EADDD5 !important;
+		box-shadow: none  !important;
+		background-color: transparent !important;
+		//background-color: #DEE2D6 !important;
+		//border-left:	4px solid #569DBC !important; 
+		background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAAB6JQAAgIMAAPn/AACA6QAAdTAAAOpgAAA6mAAAF2+SX8VGAAAAXUlEQVR42qTMuRHAIBDAQHGtugFacUJ9dGIiZmzz3aN8la5SH/xliWDglggGkAj2DD7YOhiwZTDF2sESawZbfBoc8W6gwquBGs8GJvwfmPF74MJ94MYADQAA//8DAAp3EnfGGrWIAAAAAElFTkSuQmCC)  !important;
+		background-repeat: no-repeat !important; 
+		//background-repeat: repeat-y !important; 
+	}
 	div.statscontainer {
 		margin-left:	20px !important;
 	}
@@ -252,6 +270,7 @@
 	.answered{
 		background:		#DDDDD3  !important;
 		color:			#000000 !important;
+		border: 		none !important;
 	}
 	.answered strong{
 		color:			#000000 !important;
@@ -318,13 +337,15 @@
 		color: 			#111 !important;
 		border-color: 	#C0C0AD !important;
 		background: 	#E6E6DC !important;
+		border-radius: 	2px !important;
 	}
 	.post-tag:hover{
 		background: 	#D6D6C7 !important;
 	}
 	.moderator-tag {
-		color: 			#A60000 !important;
-		border-color: 	#A60000 !important;
+		color: 			#822D2D !important;
+		//color: 			#111 !important;
+		//border-color: 	#A60000 !important;
 	}
 	.required-tag {
 		text-decoration: 	underline  !important;
