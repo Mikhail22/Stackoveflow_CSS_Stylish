@@ -16,17 +16,36 @@
 	url-prefix("http://meta.codereview.stackexchange.com"), 
 	url-prefix("http://physics.stackexchange.com"), 
 	url-prefix("http://meta.physics.stackexchange.com"), 
+	url-prefix("http://cogsci.stackexchange.com"), 
+	url-prefix("http://meta.cogsci.stackexchange.com"), 
 	url-prefix("http://codegolf.stackexchange.com"){
 
 
 /* ======================  LAYOUT SETTINGS  ====================== */
-/* HTML Body bg */
-	body {
-		background-color: #E6E6DC; !important;
-	}
 /*  Default global font  */
 	#content{
 		font-family: 	"Segoe UI" !important;
+		//font-family: 	"Calibri"  !important;
+	}
+/*  Main container  */
+	div#content {
+		margin-left: 	130px  !important;
+		padding-left: 	30px  !important;
+		border: 		1px solid !important;
+		border-color: 	#999 !important;
+		//background-color: #F0F3E9 !important;
+		//background-color: #EEF0DF !important;
+		//background-color: #E8ECE2 !important;
+		//background-color: #F1F4ED !important;
+		//background-color: #E4E6DC !important;
+		background-color: #E5E6DC !important;
+		width: 			1080px !important;
+	}
+/* HTML body tag (margin color) */
+	body {
+		//background-color: #E6E6DC; !important;
+		//background-color: #E6E6DC !important;
+		background-color: #D9DAD0 !important;
 	}
 /*  top bar and header  */
 	.topbar .topbar-wrapper{
@@ -39,46 +58,93 @@
 		margin-left: 	120px  !important;
 		width: 			1000px  !important;
 	}
+	div.container{
+		box-shadow: none !important; 
+		background: #E5E6DC !important;
+	}
 	div#mainbar{
 		width: 			760px !important;
 	}
-
-/*  Main container  */
-	div#content {
-		margin-left: 	130px  !important;
-		padding-left: 	30px  !important;
-		border: 		1px solid !important;
-		border-color: 	#999 !important;
-		//background-color: #F0F3E9 !important;
-		//background-color: #F1F4ED !important;
-		background-color: #EEF1E8 !important;
-		width: 			1080px !important;
-	}
-/* Body width  */
+/* text width  */
 	.post-text {
+		width: 			600px !important; 
+		background-color: none !important;
 		font-family: 	"Perpetua" !important;
-		width: 			610px !important; 
+		//font-family: 	"Segoe UI" !important;
+		font-size: 		20.4px !important;
 	}
-/* paragraph text */
+
+/* <p> in text */
 	.post-text p{
 		color: 			#000000 !important;
-		//font-size: 		18px !important;
-		font-size: 		18px !important;
-		line-height: 	24px !important;
-		margin-top:		7px !important;
-		margin-bottom:	10px !important;
+		line-height: 	135% !important;
+		margin-top:		12px !important;
+		margin-bottom:	9px !important;
 	}
 /* Bulleted lists */
+	li {
+		font-size: 		inherit !important;
+	}
 	.post-text li {
-		font-size: 		17px !important;
-		line-height: 	21px !important;
-		margin-top:		8px !important;
-		margin-bottom:	8px !important;
+		line-height: 	120% !important;
+		padding-top: 	0px !important;
+		padding-bottom: 	0px !important;
+		margin-top:		5px !important;
+		margin-bottom:	0px !important;
 	}
 	.post-text ul {
-		margin-top:		0px !important;
-		margin-bottom:	12px !important;
+		padding-top: 	0px !important;
+		padding-bottom: 	0px !important;
+		margin-top:		5px !important;
+		margin-bottom:	14px !important;
 	}
+
+/* ================== Links in UI element ======================================= */
+	.comments-link {
+		color: 			#0061B0 !important;
+	}
+	.user-details a{
+		color: 			#0061B0 !important;
+	}
+	.comment-user {
+		color: 			#0061B0 !important;
+	}
+/* ================== Links in text ============================================= */
+
+	.post-text  a:not(.post-tag){
+		//color: 			#8900B0 !important;
+		color: 			#730094 !important;
+		border-bottom:	none !important; 
+	}
+	.post-text a:visited:not(.post-tag) {
+		//color: 			#AF5FC6 !important;
+		color: 			#8900B0 !important;
+	}
+	.post-text a:hover {
+		text-decoration: 	underline !important;
+	}
+	.post-text a:before{
+		content: 		"~" !important;
+	}
+	a[href$=jpg]:before, a[href$=jpeg]:before, a[href$=jpe]:before, a[href$=png]:before, a[href$=gif]:before {
+		content: 		none !important;
+	}
+	.comment-copy a{
+		color: 			#8000A4 !important;
+		font-size: 		14.6px !important;
+		font-weight: 	bold !important;
+		border-bottom:	none !important; 
+	}
+	.comment-copy a:visited {
+		color: 			#8000A4 !important;
+	}
+	.comment-copy a:hover {
+		text-decoration: 	underline !important;
+	}
+	.comment-copy:hover {
+		//font-size: 		140% !important;
+	}
+
 /*  Vote column size on the Q/A page */
 	.votecell {
 		padding-left: 	35px !important;
@@ -87,23 +153,29 @@
 /* Images width  */
 	.post-text img, .wmd-preview img{
 		max-width: 		560px !important; }
+
 /* Comments block settings */
 	.comments {
 		width: 			610px !important;
-		border-top:		1px solid #57584C !important; 
+		border-top: 	1px solid #D3D4C8 !important; 
+	}
+	.history-table .comments{
+		border-top:		none !important;
 	}
 /* Comment cell */
 	div.comment-body {
 		font-family : 	"Perpetua" !important;
-		font-size : 	15px !important;
-		line-height: 	19px !important;
+		font-size : 	16.6px !important;
+		line-height: 	21px !important;
+		//border-top: 	1px solid #D3D4C8 !important; 
 	}
 /* Comments separator. */
 	tr.comment>td {
 		border-bottom: 	1px solid #D3D4C8 !important; 
+		//border-top: 	1px solid #D3D4C8 !important; 
 	}
 /* Remove tabs borders */
-	#tabs a{
+	#tabs a, .tabs a{
 		border-bottom-width: 0px !important;
 		border-left-width: 0px !important;
 		border-right-width: 0px !important;
@@ -136,14 +208,21 @@
 	h1,h2,h3 {
 		font-family: 	"Georgia" !important;
 	}
-	h1 {
-		font-size: 		21px !important;
+	.post-text h1 {
 		margin-top: 	14px !important;
 		margin-bottom: 	4px !important;
 	}
+	.post-text h2 {
+		margin-top: 	17px !important;
+		margin-bottom: 	4px !important;
+	}
+	.post-text h3 {
+		margin-top: 	17px !important;
+		margin-bottom: 	4px !important;
+	}
 /* Fix the margin in page header [Answer, Tags...] */
-	.subheader h1{
-		margin-top:		2px !important;
+	.subheader h1, .subheader h2{
+		//margin-top:		2px !important;
 	} 
 /* Info caption (e.g. Tag info) */
 	div.welovestackoverflow {
@@ -156,7 +235,10 @@
 	}
 /* Owner highlight color */
 	.owner{
-		background-color: #EADDD5 !important;
+		background: none !important;
+	}
+	.comment-user.owner:after{
+		content: 		" * " !important;
 	}
 /* HR line style */
 	hr {
@@ -164,22 +246,22 @@
 	}
 /* Quote layout */
 	blockquote {
-		padding: 		5px !important;
-		padding-left: 	15px !important;
-		border-left:	2px solid #A4A48A !important; 
+		padding: 		1px !important;
+		padding-left: 	14px !important;
+		margin: 		0px !important; 
+		//padding-top: 	0px !important;
+		//padding-left: 	15px !important;
+		border-left:	3px solid #B8B890 !important; 
 		background: 	transparent !important
 	}
 
 /* ===================  Questions list / search page ===================  */
 	.tagged-interesting{
-		//background-color: #EADDD5 !important;
-		box-shadow: none  !important;
+		//box-shadow: none  !important;
 		background-color: transparent !important;
 		//background-color: #DEE2D6 !important;
-		//border-left:	4px solid #569DBC !important; 
 		background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAAB6JQAAgIMAAPn/AACA6QAAdTAAAOpgAAA6mAAAF2+SX8VGAAAAXUlEQVR42qTMuRHAIBDAQHGtugFacUJ9dGIiZmzz3aN8la5SH/xliWDglggGkAj2DD7YOhiwZTDF2sESawZbfBoc8W6gwquBGs8GJvwfmPF74MJ94MYADQAA//8DAAp3EnfGGrWIAAAAAElFTkSuQmCC)  !important;
 		background-repeat: no-repeat !important; 
-		//background-repeat: repeat-y !important; 
 	}
 	div.statscontainer {
 		margin-left:	20px !important;
@@ -195,11 +277,11 @@
 		color: 			#000000 !important;
 		font-size: 		18px !important;
 	}
-	.result-link a:hover{
-		color: 			#747165 !important;
-	}
 	.result-link a:visited {
-		color: 			#747165 !important;
+		//color: 			#8F619C !important;
+	}
+	.result-link a:hover{
+		color: 			#C811B5 !important;
 	}
 	div.question-summary {
 		width: 			760px !important;
@@ -225,30 +307,36 @@
 
 /* =================== Sidebar width ==========================  */
 	div#sidebar {
-		width: 			240px  !important;
+		width: 			260px  !important;
 	}
 /* =================== Questions hyperlinks ===================  */
 /* Question header in Q list*/
-	h3 a.question-hyperlink{
+	h3 .question-hyperlink {
 		font-family: 	"Georgia" !important;
 		font-size: 		19px !important;
+		line-height: 	19px !important;
 	}
 /* Question links in sidebar*/
-	.question-hyperlink {
-		//font-family: 	"Segoe UI" !important;
-		font-size: 		12px !important;
-		line-height: 	17px !important;
+	.question-hyperlink, .answer-hyperlink {
+		margin-left: 	0px !important;
 		color: 			#000000 !important;
 	}
-	.question-hyperlink:hover {
-		color: 			#747165 !important;
+	.question-hyperlink:visited , .answer-hyperlink:visited{
+		color: 			#706F00 !important;
 	}
-	.question-hyperlink:visited {
-		color: 			#747165 !important;
+	.question-hyperlink:hover, .answer-hyperlink:hover {
+		color: 			#B408A3 !important;
+	}
+	.module .question-hyperlink {
+		font-size: 		13px !important;
+		margin-left: 	0px !important;
+		margin-top: 	-5px !important;
+		margin-bottom: 	6px !important;
 	}
 /*  Featured ad  */
 	.bulletin-title{
-		color: 			#484235 !important;
+		//color: 			#484235 !important;
+		color: 			#C85500 !important;
 	}
 	.module.community-bulletin {
 		border: 		1px solid #AEAD9D !important;
@@ -256,19 +344,34 @@
 		padding-left: 	9px !important;
 		padding-top: 	9px !important;
 		padding-right: 	5px !important;
-		padding-bottom: 5px !important;
+		padding-bottom: 12px !important;
 	}
-
+	.bulletin-item-content {
+		width: 			195px !important;
+		padding-left: 	11px !important;
+	}
 /* =================== Votes coloring ===================  */
-	.answer-votes{
-		background:		none  !important;
+/*  Sidebar vote cells */
+	.module .answer-votes{
+		border: 		none !important;
+		background:		#D5D6C9  !important;
 		color:			#000000 !important;
+		padding-top: 		3px !important;
+		padding-bottom: 		5px !important;
+		text-align: 		center !important; 
+	}
+	div.spacer{
+		padding-bottom: 0px !important;
+		padding-top: 5px !important;
+		padding-right: 5px !important;
+		padding-left: 0px !important;
+		margin-bottom: 2px !important;
 	}
 	.viewcount {
 		color:			#000000 !important;
 	}
 	.answered{
-		background:		#DDDDD3  !important;
+		background:		#D8D9D0  !important;
 		color:			#000000 !important;
 		border: 		none !important;
 	}
@@ -282,20 +385,22 @@
 		color:			#000000 !important;
 	}
 	.answered-accepted{
-		background:		#DDDDD3  !important;
-		border: 		1px solid #8E8E7C !important;
+		background:		#D5D6C9  !important;
 		color:			#000000 !important;
+		border: 		1px solid #8E8E7C !important;
 	}
 
 /* ======================= Code block ====================== */
 /* Code block frame look */
 	pre {
-		background-color : #E6E6DD !important;
+		background-color : #DBDCD3 !important;
 		padding-left : 	8px !important; 
+		border-left: 		3px solid #B2B2A5 !important;
 	}
+/* Inline code */
 	code {
 		background: 	transparent !important;
-		color: 			#A52101 !important;
+		color: 			#900000 !important;
 		font-family: 	inherit !important;
 		font-size: 		inherit !important;
 	}
@@ -303,18 +408,21 @@
 	pre code {
 		background: 	transparent !important;
 		color: 			#100E05 !important;
-		font-family: 	"Courier New" !important;
-		font-weight: 	bold !important;
-		font-size: 		12px !important;
-		line-height: 	21px !important;
+		//font-family: 	"Courier New" !important;
+		font-family: 	"Perpetua" !important;
+		//font-family: 	"Consolas" !important;
+		//font-weight: 	bold !important;
+		font-size: 		17px !important;
+		line-height: 	23px !important;
 	}
-/* Inline Code in paragraph and links */
-	p code {
+/* Inline Code in paragraph and li */
+	p code, li code {
 		background-color : transparent !important;
 	}
 	a code {
 		color: 			inherit !important;
 	}
+
 /* Code highlight scheme */
 	pre .str{color:#005E88!important}
 	pre .kwd{color:#8A1818!important}
@@ -334,21 +442,28 @@
 		font-family: 	"Courier New"  !important;
 		font-weight: 	bold !important;
 		font-size: 		12px !important;
-		color: 			#111 !important;
-		border-color: 	#C0C0AD !important;
-		background: 	#E6E6DC !important;
+		color: 			#222 !important;
+		border-color: 	#8E8E7C !important;
+		background: 	#DEDFD6 !important;
 		border-radius: 	2px !important;
+		transition: background		.15s ease-out !important;
 	}
 	.post-tag:hover{
-		background: 	#D6D6C7 !important;
+		transition: 		none !important;
+		background: 	#D7D7CA !important;
 	}
 	.moderator-tag {
 		color: 			#822D2D !important;
-		//color: 			#111 !important;
-		//border-color: 	#A60000 !important;
+		font-weight: 	bold !important;
+		border-color: 	#822D2D !important;
+		background: 	#E8DAD3 !important;
 	}
 	.required-tag {
-		text-decoration: 	underline  !important;
+		border: 		1px solid #8E8E7C !important;
+	}
+	.required-tag:after {
+		color: 			#555 !important;
+		content: 		"\2009*" !important;
 	}
 /* Fix paddings for inline tags */
 	a.post-tag {
@@ -357,13 +472,7 @@
 		padding-left: 	7px !important;
 		padding-right: 	7px !important;
 	}
-	p .post-tag {
-		padding-top: 	3px !important;
-		padding-bottom: 2px !important;
-		padding-left: 	4px !important;
-		padding-right: 	4px !important;
-	}
-	li .post-tag {
+	p .post-tag, li .post-tag {
 		padding-top: 	3px !important;
 		padding-bottom: 2px !important;
 		padding-left: 	4px !important;
