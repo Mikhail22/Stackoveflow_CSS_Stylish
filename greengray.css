@@ -25,7 +25,6 @@
 /*  Default global font  */
 	#content{
 		font-family: 	"Segoe UI" !important;
-		//font-family: 	"Calibri"  !important;
 	}
 /*  Main container  */
 	div#content {
@@ -73,13 +72,15 @@
 		//font-family: 	"Segoe UI" !important;
 		font-size: 		20.4px !important;
 	}
-
 /* <p> in text */
 	.post-text p{
 		color: 			#000000 !important;
 		line-height: 	135% !important;
-		margin-top:		12px !important;
-		margin-bottom:	9px !important;
+		margin-top:		17px !important;
+		margin-bottom:	12px !important;
+	}
+	.post-text p:first-child{
+		margin-top:		5px !important;
 	}
 /* Bulleted lists */
 	li {
@@ -108,6 +109,12 @@
 	}
 	.comment-user {
 		color: 			#0061B0 !important;
+	}
+	.user-action-time a {
+		color: 			#0061B0 !important;
+	}
+	.vt {
+		padding-top: 	6px !important;
 	}
 /* ================== Links in text ============================================= */
 
@@ -147,6 +154,7 @@
 
 /*  Vote column size on the Q/A page */
 	.votecell {
+		padding-top: 	12px !important;
 		padding-left: 	35px !important;
 		padding-right: 	45px !important;
 	}
@@ -198,11 +206,13 @@
 		border-width: 	4px !important;
 		padding-top: 	2px !important;
 		padding-bottom: 3px !important;
+		padding-right: 	304px !important;
 	}
 	#question-header a{
 		font-family:	"Georgia" !important;
 		font-size: 		23px !important;
 		color: 			#181A0D !important; 
+		//margin-right: 	104px !important;
 	}
 /* Text headers */
 	h1,h2,h3 {
@@ -248,11 +258,16 @@
 	blockquote {
 		padding: 		1px !important;
 		padding-left: 	14px !important;
-		margin: 		0px !important; 
-		//padding-top: 	0px !important;
-		//padding-left: 	15px !important;
+		margin-top: 	14px !important;
+		//font-size: 		17px !important;
 		border-left:	3px solid #B8B890 !important; 
 		background: 	transparent !important
+	}
+	blockquote p:first-child{
+		margin-top: 	7px !important;
+	}
+	blockquote p:last-child{
+		margin-bottom: 	7px !important;
 	}
 
 /* ===================  Questions list / search page ===================  */
