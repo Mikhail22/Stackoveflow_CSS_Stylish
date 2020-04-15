@@ -1,4 +1,4 @@
-###User style "GreenGray" for StackOverflow  
+### User style "GreenGray" for StackOverflow  
 
 ---
 Created in 2016 by Mikhail V.   
