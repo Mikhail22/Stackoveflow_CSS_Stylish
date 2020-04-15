@@ -5,7 +5,7 @@ Created in 2016 by Mikhail V.
 
 ---
 Files: 		
- greengray.css  - older version with many styles 
+ greengray.css  - older version with many styles  
  SO-2019.css  - newer version, simplified (recommended)
 
 Tested on Windows & Firefox  
