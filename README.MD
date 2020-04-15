@@ -4,26 +4,26 @@
 Created in 2016 by Mikhail V.   
 
 ---
-Files: 		greengray.css  
-OS: 		Windows  
-Browser: 	Firefox  
- 
+Files: 		
+ greengray.css  - older version with many styles 
+ SO-2019.css  - newer version, simplified (recommended)
+
+Tested on Windows & Firefox  
+
 ---
   
   
 **Description**   
 
-This is a highly readable user style for the Stylish Firefox plugin.  
+User styles for the Stylish Firefox plugin or Stylus plugin for Chrome.  
   
 **Requirements**  
 
-Important:  For this style to work properly, you must have "Perpetua", "Segoe UI", "Georgia" and "Courier New" fonts installed.  
-If you do not have the font "Perpetua", you should install it, otherwise it all does not make much sense.
+Important:  For this style to work properly, you must check fonts installed, e.g. search for  "Perpetua" in the css file. 
 
 **Usage**  
-- install the Stylish plugin for Firefox
-- click on the plugin icon (big S in the right upper corner)
-- select "Manage styles" 
-- click "Write New Style" (or Edit if you edit an existing style file)
-- copypaste the context of "greengray.css" into the edit window and save it
-
+- install the Stylish plugin for Firefox of Stylus for Chrome;
+- click on the plugin icon (big S in the right upper corner);
+- "Write New Style" (or Edit if you edit an existing style file)
+- copypaste the context of CSS into the edit window and save it;
+- add sites if you use Stylus in the fields to the bottom. 
